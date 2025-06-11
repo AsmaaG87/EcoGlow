@@ -1,0 +1,281 @@
+
+/*GLOBAL STYLES*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body  {
+    font-family: "Montserrat", sans-serif;
+    background-color: #FDFBD4;
+    font-size: 16px;
+    line-height: 1.5;
+    
+}
+
+/*NAVIGATION BAR*/
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFFFE4;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    font-family:  "Lora", serif;
+   
+
+}
+.logo {
+    border-radius: 50%;
+    height: 80px;
+    width:auto;
+    margin: 10px;
+    padding: 10px;
+}
+.cta {
+    background-color: #2e4d3b;
+    color: #FDFBD4;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-weight: bold; 
+}
+.cta:hover {
+    background-color: #FDFBD4;
+    color: #4A7C59; 
+   
+}
+.nav-bar a {
+    color: #042512; 
+    text-decoration: none;
+    font-size: 1.25rem;
+    margin: 0 15px;
+    padding: 5px;  
+   
+}
+.nav-bar a:hover {
+    color: #4A7C59; 
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+    font-weight: 300;
+    
+}
+
+/*Hero SECTION*/
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../images/herobackground.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: auto;
+    margin-top: 0;
+}
+h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+    color: #042512; 
+}
+span {
+    color: #042512;
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+    font-size: 1.25rem;
+    font-style: italic;   
+    font-family: "Lora", serif;
+}
+.hero span:hover {
+    color: #4A7C59;
+}
+/*MISSION SECTION*/
+#mission {
+    margin: 20px 0;
+    color: #042512; 
+    text-align: center;
+    background-color: #FFFFE4;
+    padding: 20px;
+    margin-top: 0;
+   margin-bottom: 0;
+}
+#mission p {
+    font-size: 1rem;
+    color: #042512; 
+    text-align: center;
+    max-width: 800px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 1.5;
+    font-style: italic;
+    font-family: "Lora", serif;
+    margin: 0 auto;
+}
+#mission h2 {
+    margin-bottom: 0;
+    font-size: 2.5rem;
+}
+#mission p:hover {
+    color: #4A7C59; 
+    font-weight: bold;
+}
+/*PRODUCTS SECTION*/
+#products h2{
+    font-size: 2.5rem;
+    color: #042512; 
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;;
+}
+#products {
+    background-color: #FFFFE4;
+    margin-top: 0;
+    padding: 20px;
+    max-width: 100%;
+}
+.product-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0;
+    
+}
+.product-items figcaption {
+    text-align: center;
+    font-size: 1.25rem;
+    color: #042512; 
+    margin-top: 8px;  
+    font-family: "Lora", serif;;
+}
+.product-items figcaption:hover {
+    color: #4A7C59; 
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+}
+.product-items figure img {
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+/*TEAM SECTION*/
+#team {
+    background-color: #FFFFE4;
+    padding: 20px;
+    margin-top: 0;
+    color: #042512; 
+}
+#team h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+.team-members figure {
+    text-align: center;
+    margin: 10px;
+   
+}
+.team-members figure img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+.team-members figcaption {
+    font-size: 1rem;
+    color: #042512; 
+    margin-top: 8px;  
+    font-family: "Lora", serif;
+}
+/*FOOTER SECTION*/
+footer {
+    background-color: #FFFFE4;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    max-width: 100%;
+}
+#contact {
+    padding: 20px;
+    margin-top: 0;
+    color: #042512; 
+    font-size: 1.2rem;
+    margin-top: 10px;
+    font-family: "Lora", serif;
+}
+#contact a {
+    color: #042512; 
+    text-decoration: none;
+}
+#contact a:hover {
+    color: #4A7C59; 
+}
+footer p {
+    font-size: 0.75rem;
+    color: #042512; 
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    text-align: left;
+    font-family: "Lora", serif;
+}
+/*MEDIA QUERIES*/
+@media (max-width: 768px) {
+    .nav-bar {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 10px;
+    }
+    .nav-bar a {
+        margin: 5px 0;
+    }
+    .cta {
+        margin-top: 10px;
+    }
+}
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    .hero {
+        height: 80vh;
+        overflow-y: auto;
+    }
+    .product-items {
+        flex-direction: column;
+        align-items: center;
+        overflow-y: auto;
+    }
+    .team-members {
+        flex-direction: column;
+        align-items: center;
+        overflow-y: auto;
+    }
+    footer p {
+        font-size: 0.65rem;
+        overflow-y: auto;
+    }
+}
+
